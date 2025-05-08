@@ -6,7 +6,7 @@ exports.handler = (event, context, callback) => {
         PhoneNumber: event.number
     };
     
-    // ap-northeast-1 도쿄 리전 식별자
+//asdfasdfasdfasdfasdfasdfasdfasdf
     const publishTextPromise = new AWS.SNS({
         apiVersion: '2010-03-31',
         region: 'ap-northeast-1'

@@ -1,14 +1,14 @@
 import { URL } from 'url';
 import https from 'https';
 
-// 환경변수에서 Webhook URL 가져오기
+
 const ENV = process.env;
 if (!ENV.webhook) throw new Error('Missing environment variable: webhook');
 const webhook = ENV.webhook;
 
 // 상태 값과 색상, 메시지 설정
 const statusColorsAndMessage = {
-    ALARM: { "color": "danger", "message": "위험" },
+    ALARM: { "color": "danger", "message": "솔데" },
     INSUFFICIENT_DATA: { "color": "warning", "message": "데이터 부족" },
     OK: { "color": "good", "message": "정상" }
 };
